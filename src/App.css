@@ -1,28 +1,62 @@
 .App {
-  text-align: center;
+    text-align: center;
+    position: fixed;
+    height: 100%;
+    width: 100%;
 }
 
 .App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+    animation: App-logo-spin infinite 20s linear;
+    height: 80px;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+.App-sidebar {
+    background-color: #222;
+    position: relative;
+    width: 165px;
+    height: 100%;
+    padding: 20px;
+    color: white;
+    float: left;
+}
+
+.App-body {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    color: black;
+    font-size: large;
 }
 
 .App-title {
-  font-size: 1.5em;
+    font-size: 1.5em;
 }
 
-.App-intro {
-  font-size: large;
+.diceButton {
+    border: none;
+    color: #FFF;
+    font: 13px/1.4 Roboto, sans-serif;
+    padding: 8px 12px;
+    margin: 2px;
+    width: 75px;
+}
+
+.diceButton {
+    background-color: #7f8c8d;
+    text-decoration: none
+}
+
+.diceButton:hover {
+    background-color: #667071;
+    cursor: pointer
 }
 
 @keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
