@@ -1,40 +1,30 @@
 import React, {Component} from 'react';
 
 class Dice extends Component {
-    constructor(props){
-        super(props);
-
-        this.state = {
-            values: {},
-            showValues: {}
-        }
-    }
-
     rollD100 = () => {
-        console.log("test");
+        updateConsole(Math.floor(Math.random() * 100) +1);
     };
     rollD20 = () => {
-        console.log("test");
+        updateConsole(Math.floor(Math.random() * 20) +1);
     };
     rollD12 = () => {
-        console.log("test");
+        updateConsole(Math.floor(Math.random() * 12) +1);
     };
     rollD10 = () => {
-        console.log("test");
+        updateConsole(Math.floor(Math.random() * 10) +1);
     };
     rollD8 = () => {
-        console.log("test");
+        updateConsole(Math.floor(Math.random() * 8) +1);
     };
     rollD6 = () => {
-        console.log("test");
+        updateConsole(Math.floor(Math.random() * 6) +1);
     };
     rollD4 = () => {
-        console.log("test");
+        updateConsole(Math.floor(Math.random() * 4) +1);
     };
     rollD2 = () => {
-        console.log("test");
+        updateConsole(Math.floor(Math.random() * 2) +1);
     };
-
 
     render() {
         return (
@@ -51,5 +41,9 @@ class Dice extends Component {
         );
     }
 }
+function updateConsole(result){
+    document.getElementById('lblOutput').innerHTML = 'You rolled a ' + result +'.';
+};
+
 
 export default Dice;

@@ -1,8 +1,10 @@
 .App {
     text-align: center;
-    position: fixed;
     height: 100%;
     width: 100%;
+    margin: auto;
+    display: flex;
+    position: fixed;
 }
 
 .App-logo {
@@ -12,21 +14,19 @@
 
 .App-sidebar {
     background-color: #222;
-    position: relative;
-    width: 165px;
     height: 100%;
     padding: 20px;
     color: white;
-    float: left;
+    flex: 0 0 10%;
 }
 
 .App-body {
-    display: block;
-    position: relative;
     width: 100%;
     height: 100%;
     color: black;
     font-size: large;
+    margin-left: 165px;
+    flex: 1;
 }
 
 .App-title {
@@ -59,4 +59,16 @@
     to {
         transform: rotate(360deg);
     }
+}
+
+.consoleContainer{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+.consoleContainer label {
+    font-size: 79pt;
 }
